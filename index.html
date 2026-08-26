@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>ООО «Калугаэнергосетьремонт» — электромонтажные работы</title>
+  <meta name="description" content="ООО «Калугаэнергосетьремонт»: монтаж, обслуживание и ремонт электрооборудования в Туле, Калуге, Москве и по России.">
+  <style>
+   :root {
+  --bg-start: #C9A163;       /* тёплый светло‑коричневый */
+  --bg-end: #F5D7A2;         /* кремово‑золотой */
+  --text-main: #222;        /* тёмно‑серый, хорошо читается на тёплом фоне */
+  --text-light: #fff;       /* белый для тёмных элементов */
+  --card-bg: rgba(200, 160, 120, 0.2); /* полупрозрачный тон в цвет фона */
+  --header-bg: rgba(80, 60, 40, 0.95);  /* тёмная тёплая шапка */
+  --border-color: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  color: var(--text-main);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+  /* убираем белый фон */
+  background: transparent;
+}
+
+header {
+  background: var(--header-bg);
+  color: var(--text-light);
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+h1, h2, h3 {
+  color: #1a1a1a;
+}
+
+/* hero-блок: без белой подложки, только тонкая рамка и полупрозрачный фон */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* карточки без белого фона */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 6px;
+  background: var(--card-bg);       /* полупрозрачный тон фона */
+  border: 1px solid var(--border-color);
+}
+
+/* список услуг без белого фона */
+ul.services-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+ul.services-list li {
+  margin-bottom: 8px;
+}
+
+/* блок контактов без белого фона */
+.contact-info {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+  max-width: 500px;
+}
+
+footer {
+  background: rgba(40, 30, 20, 0.9);
+  color: var(--text-light);
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.center-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+  </style>
+<link rel="icon" href="logo.jpg" type="image/jpeg">
+</head>
+<body>
+  <header>
+  <div class="container" style="display: flex; align-items: center; gap: 15px;">
+    <img src="kesr.png" alt="Логотип ООО «Калугаэнергосетьремонт»" style="height: 200px; width: auto;">
+    <div>
+      <h1 style="margin:0; font-size:1.5rem; color: white;">ООО «Калугаэнергосетьремонт»</h1>
+    </div>
+    <nav style="margin-left: auto;">
+      <ul>
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+	<li><a href="gallery.html">Наши работы</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+  <main class="container">
+    <section class="hero">
+      <h2>Электромонтаж, обслуживание и ремонт оборудования</h2>
+      <p>Быстро, качественно, своевременно. Работаем по Туле, Калуге, Москве и другим регионам России.</p>
+    </section>
+
+    <section>
+      <h2 class="center-title">Почему выбирают нас</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Опыт специалистов</h3>
+          <p>Квалифицированные специалисты с опытом работы на объектах филиалов «Тулэнерго», ПАО «МОЭСК» и «Интер РАО – Электрогенерация».</p>
+        </div>
+        <div class="feature-card">
+          <h3>Техническая база</h3>
+          <p>Оснащённая производственная база, передовые технологии монтажа и ремонта. Применение современных и качественных материалов.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Обслуживание</h3>
+          <p>Обслуживаем любые электроустановки на предприятиях: диагностика, регламент, ремонт. Снижаем риски аварий</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="center-title">Зона обслуживания</h2>
+      <p>Выполняем работы по Туле и Тульской области, Калуге и Калужской области, Москве и Московской области, а также в других областях России.</p>
+      <h2 class="center-title">Будем рады видеть Вас среди наших постоянных партнёров!</h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ООО «Калугаэнергосетьремонт». Все права защищены.</p>
+  </footer>
+</body>
+</html>

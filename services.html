@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Услуги ООО «Калугаэнергосетьремонт»</title>
+  <meta name="description" content="Услуги ООО «Калугаэнергосетьремонт»: прокладка кабельных линий, монтаж ВЛ, ТП, трансформаторов и др.">
+  <style>
+    :root {
+  --bg-start: #C9A163;       /* тёплый светло‑коричневый */
+  --bg-end: #F5D7A2;         /* кремово‑золотой */
+  --text-main: #222;        /* тёмно‑серый, хорошо читается на тёплом фоне */
+  --text-light: #fff;       /* белый для тёмных элементов */
+  --card-bg: rgba(200, 160, 120, 0.2); /* полупрозрачный тон в цвет фона */
+  --header-bg: rgba(80, 60, 40, 0.95);  /* тёмная тёплая шапка */
+  --border-color: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  color: var(--text-main);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+  /* убираем белый фон */
+  background: transparent;
+}
+
+header {
+  background: var(--header-bg);
+  color: var(--text-light);
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+h1, h2, h3 {
+  color: #1a1a1a;
+}
+
+/* hero-блок: без белой подложки, только тонкая рамка и полупрозрачный фон */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* карточки без белого фона */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 6px;
+  background: var(--card-bg);       /* полупрозрачный тон фона */
+  border: 1px solid var(--border-color);
+}
+
+/* список услуг без белого фона */
+ul.services-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+ul.services-list li {
+  margin-bottom: 8px;
+}
+
+/* блок контактов без белого фона */
+.contact-info {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+  max-width: 500px;
+}
+
+footer {
+  background: rgba(40, 30, 20, 0.9);
+  color: var(--text-light);
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+.center-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+  </style>
+<link rel="icon" href="logo.jpg" type="image/jpeg">
+</head>
+<body>
+  <header>
+  <div class="container" style="display: flex; align-items: center; gap: 15px;">
+    <img src="kesr.png" alt="Логотип ООО «Калугаэнергосетьремонт»" style="height: 200px; width: auto;">
+    <div>
+      <h1 style="margin:0; font-size:1.5rem; color: white;">ООО «Калугаэнергосетьремонт»</h1>
+    </div>
+    <nav style="margin-left: auto;">
+      <ul>
+        <li><a href="index.html" >Главная</a></li>
+        <li><a href="services.html" class="active">Услуги</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+	<li><a href="gallery.html">Наши работы</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <h2 class="center-title">Наши услуги</h2>
+    <ul class="services-list">
+      <li>Прокладка кабельных линий (КЛ) от 0,4 кВ до 10 кВ.</li>
+      <li>Монтаж воздушных линий (ВЛ) 0,4–10 кВ; 35–110 кВ.</li>
+      <li>Монтаж электропроводки в производственных и административных помещениях. Прокладка силовых и розеточных сетей электроснабжения.</li>
+      <li>Монтаж электрических шкафов и технологического электрооборудования.</li>
+      <li>Поставка и монтаж светильников в производственных и административных помещениях.</li>
+      <li>Монтаж и подключение трансформаторов 6–10 кВ; 35–110 кВ.</li>
+      <li>Поставка и монтаж трансформаторных подстанций (ТП) 6–10 кВ, а также ПС 35–110 кВ, в т.ч. РЗА.</li>
+      <li>Монтаж уличного освещения.</li>
+      <li>Работы по обслуживанию объектов электроснабжения и оборудования.</li>
+    </ul>
+    <p>Все виды работ и выполнение заказов выполняются быстро, качественно и своевременно. Мы решаем задачи любой сложности в короткие сроки.</p>
+ 
+<h2 class="center-title">Выполняем работы</h2>
+
+    <p><strong>Тула и Тульская область, Калуга и Калужская область, Москва и Московская область, а так же другие регионы России.</strong></p>
+      </div>
+ </main>
+
+  <footer>
+    <p>&copy; 2026 ООО «Калугаэнергосетьремонт». Все права защищены.</p>
+  </footer>
+</body>
+</html>

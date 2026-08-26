@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Контакты ООО «Калугаэнергосетьремонт»</title>
+  <meta name="description" content="Контакты ООО «Калугаэнергосетьремонт»: телефон, e-mail, зона обслуживания.">
+  <style>
+    :root {
+  --bg-start: #C9A163;       /* тёплый светло‑коричневый */
+  --bg-end: #F5D7A2;         /* кремово‑золотой */
+  --text-main: #222;        /* тёмно‑серый, хорошо читается на тёплом фоне */
+  --text-light: #fff;       /* белый для тёмных элементов */
+  --card-bg: rgba(200, 160, 120, 0.2); /* полупрозрачный тон в цвет фона */
+  --header-bg: rgba(80, 60, 40, 0.95);  /* тёмная тёплая шапка */
+  --border-color: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  color: var(--text-main);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+  /* убираем белый фон */
+  background: transparent;
+}
+
+header {
+  background: var(--header-bg);
+  color: var(--text-light);
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+h1, h2, h3 {
+  color: #1a1a1a;
+}
+
+/* hero-блок: без белой подложки, только тонкая рамка и полупрозрачный фон */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* карточки без белого фона */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 6px;
+  background: var(--card-bg);       /* полупрозрачный тон фона */
+  border: 1px solid var(--border-color);
+}
+
+/* список услуг без белого фона */
+ul.services-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+ul.services-list li {
+  margin-bottom: 8px;
+}
+
+/* блок контактов без белого фона */
+.contact-info {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+  max-width: 500px;
+}
+
+footer {
+  background: rgba(40, 30, 20, 0.9);
+  color: var(--text-light);
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+.center-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn-download {
+  display: inline-block;
+  background: #C9A163;           /* цвет под ваш фон */
+  color: #222;                   /* тёмный текст на тёплом фоне */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-download:hover {
+  background: #B58F50;          /* чуть темнее при наведении */
+}
+
+
+/* Контейнер, который поставит текст и кнопку в одну строку */
+.contact-row {
+  display: flex;
+  align-items: flex-start;       /* прижать оба блока к верху */
+  justify-content: space-between; /* разнести по краям */
+  gap: 2rem;                     /* расстояние между текстом и кнопкой */
+  flex-wrap: wrap;               /* на мобильных кнопка уедет вниз */
+}
+
+/* Сам блок с адресом/телефоном делаем как «колонку», чтобы текст не разъезжался */
+.contact-info {
+  background: transparent;       /* убираем белый фон */
+  border: none;
+}
+
+/* Кнопка скачивания */
+.btn-download {
+  display: inline-block;
+  background: #C9A163;           /* под твой золотой оттенок */
+  color: #222;                   /* тёмный текст на тёплом фоне */
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  white-space: nowrap;           /* чтобы текст кнопки не переносился */
+  transition: background 0.3s;
+  align-self: center;            /* по центру по вертикали относительно текста */
+}
+.btn-download:hover {
+  background: #B58F50;          /* чуть темнее при наведении */
+}
+
+
+
+
+    @media (max-width: 768px) {
+      .contact-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+</style>
+<link rel="icon" href="logo.jpg" type="image/jpeg">
+</head>
+<body>
+  <header>
+  <div class="container" style="display: flex; align-items: center; gap: 15px;">
+    <img src="kesr.png" alt="Логотип ООО «Калугаэнергосетьремонт»" style="height: 200px; width: auto;">
+    <div>
+      <h1 style="margin:0; font-size:1.5rem; color: white;">ООО «Калугаэнергосетьремонт»</h1>
+    </div>
+    <nav style="margin-left: auto;">
+      <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="contacts.html" class="active">Контакты</a></li>
+		<li><a href="gallery.html">Наши работы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="center-title">Контакты</h2>
+
+    <!-- Вся строка: контакты слева, кнопка справа -->
+    <div class="contact-row">
+      <!-- Левая часть: данные -->
+      <div class="contact-info">
+        <h3>Контактная информация</h3>
+        <p><strong>Администрация E‑mail:</strong> <a href="mailto:esb40@mail.ru">esb40@mail.ru</a></p>
+        <p><strong>Тех. служба E‑mail:</strong> <a href="mailto:ooo_kesr@mail.ru">ooo_kesr@mail.ru</a></p>
+        <p><strong>Телефон:</strong> +7 (930) 791-49-80</p>
+         </div>
+
+      <!-- Правая часть: кнопка скачивания -->
+      <a href="requisites.pdf" class="btn-download" download>
+        📥 Скачать реквизиты (PDF)
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ООО «Калугаэнергосетьремонт». Все права защищены.</p>
+  </footer>
+</body>
+</html>
